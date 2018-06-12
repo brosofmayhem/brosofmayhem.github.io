@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<div class="navbar">
+  <div class="dropdown">
+  <a class="active" href="javascript:void(0)">Home</a>
+  
+    <button class="dropbtn">Videos 
+      <i class="fa fa-caret-down" href="javascript:void(0)"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Levels 20 and Under</a>
+      <a href="#">Levels 21-30</a>
+      <a href="#">Levels 31-40</a>
+      <a href="#">Levels 41-50</a>
+      <a href="#">Levels 51-55</a>
+      <a href="#">Levels 56-60</a>
+      <a href="#">Levels 61-65</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn" href="javascript:void(0)">Rules In Depth
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Basic Tactics</a>
+      <a href="#">Advanced Tactics</a>
+      <a href="#">Discrimination Rules</a>
+    <div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- MAIN CONTENT -->    
+    <!-- GOOGLE IMG -->  
+<body>
+
+<div class="container">
+  <img src="https://wallpapercave.com/wp/wp1972770.jpg">
+  <div class="content">
+    <h1>Bros of Mayhem</h1>
+    <p>Basic Rules</p>
+    <p>1. All task force members are expected to maintain a 70% participation rate and must deploy and attack will all troops until the base or your troops are destroyed during an attack.</p>
+    <p>- Stats can be monitored through the Task Force Command window, going to the My Task Force tab, clicking on the Stats button, clicking on the Member Stats button, and using the left arrow near the top to go to the Grand Total Page.</p>
+    <p>- Under Grand Total in Member Stats, if your “Attacks missed” plus your “Attacks done” are less than 10, you can miss up to 2 attacks. Upon missing your 3rd, you will be kicked. This allows new members some flexibility if they miss their first couple attacks. After that, you are subject to the 70% rule mentioned above.</p>
+    <p>2. If you get promoted to an Officer or Leader, do not use intel for Sabotage within Operations. You will get 1 warning, and then will be demoted to the point you are not able to use intel. </p>
+    <p>3. Do not express prejudicial words towards another member of the Task Force. If done, you will get 1 warning, and if done again, you will be kicked.</p>
+  </div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+<footer>
+<button class="footer about" href="#">About</button><button class="footer privacy" href="#">Privacy</button><button class="footer terms" href="#">Terms</button><button class="footer settings" href="#">Settings</button>
+</footer>
+<style>
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* Footer Styling */
+.footer {
+    font-size: 16px;
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.footer:hover {background: #eee;}
+
+/* Super Imposed Text */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #2980B9;
+  font-family: Arial;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+    background-color: #333;
+    color: white;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a blue-grey background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #34495E;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
